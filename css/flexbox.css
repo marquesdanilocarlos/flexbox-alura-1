@@ -40,3 +40,38 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+@media (max-width: 768px) {
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: normal;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .cabecalhoPrincipal-nav, .conteudoPrincipal-cursos, .rodapePrincipal-patrocinadores .container,
+    .rodapePrincipal-navMap-list {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+}
